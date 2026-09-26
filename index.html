@@ -29,6 +29,10 @@ h2{font-size:24px;font-weight:800;letter-spacing:-.01em}
 .thanks a{color:inherit;font-weight:700;text-decoration-color:var(--mint);text-decoration-thickness:2px;text-underline-offset:3px}
 .appicon{width:56px;height:56px;border-radius:14px;flex:none;box-shadow:0 0 0 1px rgba(255,255,255,.14)}
 .site{color:var(--acc);font-weight:700;font-size:14px;text-decoration:none;align-self:flex-start}
+.shots{display:flex;gap:10px;align-items:center;margin:2px 0}
+.shots img{display:block;height:auto;box-shadow:0 0 0 1px rgba(255,255,255,.14),0 12px 30px rgba(0,0,0,.35);min-width:0}
+.shots .round{width:34%;border-radius:50%}.shots .rect{width:28%;border-radius:22%/18%}.shots .phone{width:38%;border-radius:16px}
+.finbanner{display:block;margin-top:14px;border-radius:14px;overflow:hidden;border:1px solid var(--line)}.finbanner img{display:block;width:100%;height:auto}
 .herotop{display:flex;align-items:center;gap:12px}.finicon{width:52px;height:52px;border-radius:13px;flex:none}
 .apps{display:flex;flex-direction:column;gap:14px;margin-top:16px}
 .app{border-radius:18px;padding:20px;color:#eef5f1;display:flex;flex-direction:column;gap:12px}
@@ -67,13 +71,14 @@ footer{color:var(--muted);font-size:14px;text-align:center}
 <section class="thanks">
 <h2>You shaped fin</h2>
 <p>Thank you for all the bug reports, feature requests and ideas you've sent. Many of them are already in the app, and more are on the way.</p>
-<p><a href="https://izzylogic.org/fin/">izzylogic.org/fin →</a></p>
+<a class="finbanner" href="https://izzylogic.org/fin/"><img src="img/fin-feature.jpg" alt="fin, your bank SMS as a private ledger" loading="lazy"></a>
+<p style="margin-top:10px"><a href="https://izzylogic.org/fin/">izzylogic.org/fin →</a></p>
 </section>
 
 <section>
 <h2>Meet the rest of the family</h2>
 <p class="lede">Two more apps need the same 14-day start. If you have the device, I'd love you on board.</p>
-<div class="apps"><article class="app ws"><div class="apphead"><img class="appicon" src="img/windowseat.png" alt="" width="56" height="56"><div><h3>Windowseat</h3><p class="tag">Flight tracker for your watch</p></div></div><p>Look up your flight before you board, then follow it at 35,000 ft with no Wi-Fi. Progress, altitude, speed, what you&#x27;re flying over, and a logbook of every trip.</p><ul class="get"><li><div><b>Wear OS watch</b><span class="counts">Opting in counts</span></div><a class="btn" href="https://play.google.com/apps/internaltest/4698430580678742359">Opt in on Google Play</a></li><li><div><b>Apple Watch</b></div><a class="btn" href="https://testflight.apple.com/join/tGBTJBfR">Join on TestFlight</a></li></ul><a class="site" href="https://izzylogic.org/windowseat/">izzylogic.org/windowseat →</a></article><article class="app cv"><div class="apphead"><img class="appicon" src="img/conversa.png" alt="" width="56" height="56"><div><h3>Conversa</h3><p class="tag">Let&#x27;s talk numbers</p></div></div><p>Type what you mean, like “20 usd in aed” or “5 ft 11 in cm”, and get the answer. Currencies, units, speed and time, plus word definitions that work offline.</p><ul class="get"><li><div><b>iPhone</b></div><a class="btn" href="https://testflight.apple.com/join/8qzbFvKz">Join on TestFlight</a></li><li><div><b>Android</b></div><span class="btn off">Coming soon</span></li></ul><a class="site" href="https://izzylogic.org/conversa/">izzylogic.org/conversa →</a></article></div>
+<div class="apps"><article class="app ws"><div class="apphead"><img class="appicon" src="img/windowseat.png" alt="" width="56" height="56"><div><h3>Windowseat</h3><p class="tag">Flight tracker for your watch</p></div></div><div class="shots"><img class="round" src="img/ws-wear.jpg" alt="Windowseat on a Wear OS watch: 3h 35m until landing" loading="lazy"><img class="rect" src="img/ws-apple.jpg" alt="Windowseat on Apple Watch with a daytime sky" loading="lazy"><img class="rect" src="img/ws-apple-night.jpg" alt="Windowseat on Apple Watch with a night sky" loading="lazy"></div><p>Look up your flight before you board, then follow it at 35,000 ft with no Wi-Fi. Progress, altitude, speed, what you&#x27;re flying over, and a logbook of every trip.</p><ul class="get"><li><div><b>Wear OS watch</b><span class="counts">Opting in counts</span></div><a class="btn" href="https://play.google.com/apps/internaltest/4698430580678742359">Opt in on Google Play</a></li><li><div><b>Apple Watch</b></div><a class="btn" href="https://testflight.apple.com/join/tGBTJBfR">Join on TestFlight</a></li></ul><a class="site" href="https://izzylogic.org/windowseat/">izzylogic.org/windowseat →</a></article><article class="app cv"><div class="apphead"><img class="appicon" src="img/conversa.png" alt="" width="56" height="56"><div><h3>Conversa</h3><p class="tag">Let&#x27;s talk numbers</p></div></div><div class="shots"><img class="phone" src="img/cv-1-hero.jpg" alt="Conversa converting 1000 USD into GBP" loading="lazy"><img class="phone" src="img/cv-6-define.jpg" alt="Conversa defining the word serendipity" loading="lazy"></div><p>Type what you mean, like “20 usd in aed” or “5 ft 11 in cm”, and get the answer. Currencies, units, speed and time, plus word definitions that work offline.</p><ul class="get"><li><div><b>iPhone</b></div><a class="btn" href="https://testflight.apple.com/join/8qzbFvKz">Join on TestFlight</a></li><li><div><b>Android</b></div><span class="btn off">Coming soon</span></li></ul><a class="site" href="https://izzylogic.org/conversa/">izzylogic.org/conversa →</a></article></div>
 </section>
 
 <section class="why">
