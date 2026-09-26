@@ -29,9 +29,10 @@ h2{font-size:24px;font-weight:800;letter-spacing:-.01em}
 .thanks a{color:inherit;font-weight:700;text-decoration-color:var(--mint);text-decoration-thickness:2px;text-underline-offset:3px}
 .appicon{width:56px;height:56px;border-radius:14px;flex:none;box-shadow:0 0 0 1px rgba(255,255,255,.14)}
 .site{color:var(--acc);font-weight:700;font-size:14px;text-decoration:none;align-self:flex-start}
-.shots{display:flex;gap:10px;align-items:center;margin:2px 0}
-.shots img{display:block;height:auto;box-shadow:0 0 0 1px rgba(255,255,255,.14),0 12px 30px rgba(0,0,0,.35);min-width:0}
-.shots .round{width:34%;border-radius:50%}.shots .rect{width:28%;border-radius:22%/18%}.shots .phone{width:38%;border-radius:16px}
+.shots{display:flex;gap:12px;align-items:center;margin:4px -20px;padding:6px 20px 10px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.shots::-webkit-scrollbar{display:none}
+.shots img{display:block;height:auto;flex:none;scroll-snap-align:start;box-shadow:0 0 0 1px rgba(255,255,255,.14),0 12px 30px rgba(0,0,0,.35)}
+.shots .round{width:190px;border-radius:50%}.shots .rect{width:170px;border-radius:22%/18%}.shots .phone{width:190px;border-radius:22px}
 .finbanner{display:block;margin-top:14px;border-radius:14px;overflow:hidden;border:1px solid var(--line)}.finbanner img{display:block;width:100%;height:auto}
 .herotop{display:flex;align-items:center;gap:12px}.finicon{width:52px;height:52px;border-radius:13px;flex:none}
 .apps{display:flex;flex-direction:column;gap:14px;margin-top:16px}
