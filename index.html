@@ -26,10 +26,14 @@ h2{font-size:24px;font-weight:800;letter-spacing:-.01em}
 .daycap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:14px}
 .daycap b{font-family:var(--display);font-size:20px;color:var(--mint)}
 .thanks p{margin:8px 0 0}
+.thanks a{color:inherit;font-weight:700;text-decoration-color:var(--mint);text-decoration-thickness:2px;text-underline-offset:3px}
+.appicon{width:56px;height:56px;border-radius:14px;flex:none;box-shadow:0 0 0 1px rgba(255,255,255,.14)}
+.site{color:var(--acc);font-weight:700;font-size:14px;text-decoration:none;align-self:flex-start}
+.herotop{display:flex;align-items:center;gap:12px}.finicon{width:52px;height:52px;border-radius:13px;flex:none}
 .apps{display:flex;flex-direction:column;gap:14px;margin-top:16px}
 .app{border-radius:18px;padding:20px;color:#eef5f1;display:flex;flex-direction:column;gap:12px}
 .app.ws{background:var(--ws);--acc:var(--ws-accent)}.app.cv{background:var(--cv);--acc:var(--cv-accent)}
-.apphead{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
+.apphead{display:flex;align-items:center;gap:14px}
 .app h3{font-size:26px;font-weight:800;letter-spacing:-.01em}
 .tag{margin:0;color:var(--acc);font-weight:700;font-size:14px}
 .app>p{margin:0;color:#c9d6cf}
@@ -53,7 +57,7 @@ footer{color:var(--muted);font-size:14px;text-align:center}
 </style>
 <main>
 <section class="hero">
-<p class="eyebrow">fin closed test</p>
+<div class="herotop"><img class="finicon" src="img/fin.png" alt="" width="52" height="52"><p class="eyebrow">fin closed test</p></div>
 <h1>Thank you, testers.</h1>
 <ol class="days" aria-label="Day 2 of 14"><li class="on"><span>1</span></li><li class="on"><span>2</span></li><li class="today"><span>3</span></li><li class=""><span>4</span></li><li class=""><span>5</span></li><li class=""><span>6</span></li><li class=""><span>7</span></li><li class=""><span>8</span></li><li class=""><span>9</span></li><li class=""><span>10</span></li><li class=""><span>11</span></li><li class=""><span>12</span></li><li class=""><span>13</span></li><li class=""><span>14</span></li></ol>
 <div class="daycap"><span><b>Day 2</b> of 14</span><span>12 of you, opted in</span></div>
@@ -63,12 +67,13 @@ footer{color:var(--muted);font-size:14px;text-align:center}
 <section class="thanks">
 <h2>You shaped fin</h2>
 <p>Thank you for all the bug reports, feature requests and ideas you've sent. Many of them are already in the app, and more are on the way.</p>
+<p><a href="https://izzylogic.org/fin/">izzylogic.org/fin →</a></p>
 </section>
 
 <section>
 <h2>Meet the rest of the family</h2>
 <p class="lede">Two more apps need the same 14-day start. If you have the device, I'd love you on board.</p>
-<div class="apps"><article class="app ws"><div class="apphead"><h3>Windowseat</h3><p class="tag">Flight tracker for your watch</p></div><p>Look up your flight before you board, then follow it at 35,000 ft with no Wi-Fi. Progress, altitude, speed, what you&#x27;re flying over, and a logbook of every trip.</p><ul class="get"><li><div><b>Wear OS watch</b><span class="counts">Opting in counts</span></div><a class="btn" href="https://play.google.com/apps/internaltest/4698430580678742359">Opt in on Google Play</a></li><li><div><b>Apple Watch</b></div><a class="btn" href="https://testflight.apple.com/join/tGBTJBfR">Join on TestFlight</a></li></ul></article><article class="app cv"><div class="apphead"><h3>Conversa</h3><p class="tag">Let&#x27;s talk numbers</p></div><p>Type what you mean, like “20 usd in aed” or “5 ft 11 in cm”, and get the answer. Currencies, units, speed and time, plus word definitions that work offline.</p><ul class="get"><li><div><b>iPhone</b></div><a class="btn" href="https://testflight.apple.com/join/8qzbFvKz">Join on TestFlight</a></li><li><div><b>Android</b></div><span class="btn off">Coming soon</span></li></ul></article></div>
+<div class="apps"><article class="app ws"><div class="apphead"><img class="appicon" src="img/windowseat.png" alt="" width="56" height="56"><div><h3>Windowseat</h3><p class="tag">Flight tracker for your watch</p></div></div><p>Look up your flight before you board, then follow it at 35,000 ft with no Wi-Fi. Progress, altitude, speed, what you&#x27;re flying over, and a logbook of every trip.</p><ul class="get"><li><div><b>Wear OS watch</b><span class="counts">Opting in counts</span></div><a class="btn" href="https://play.google.com/apps/internaltest/4698430580678742359">Opt in on Google Play</a></li><li><div><b>Apple Watch</b></div><a class="btn" href="https://testflight.apple.com/join/tGBTJBfR">Join on TestFlight</a></li></ul><a class="site" href="https://izzylogic.org/windowseat/">izzylogic.org/windowseat →</a></article><article class="app cv"><div class="apphead"><img class="appicon" src="img/conversa.png" alt="" width="56" height="56"><div><h3>Conversa</h3><p class="tag">Let&#x27;s talk numbers</p></div></div><p>Type what you mean, like “20 usd in aed” or “5 ft 11 in cm”, and get the answer. Currencies, units, speed and time, plus word definitions that work offline.</p><ul class="get"><li><div><b>iPhone</b></div><a class="btn" href="https://testflight.apple.com/join/8qzbFvKz">Join on TestFlight</a></li><li><div><b>Android</b></div><span class="btn off">Coming soon</span></li></ul><a class="site" href="https://izzylogic.org/conversa/">izzylogic.org/conversa →</a></article></div>
 </section>
 
 <section class="why">
