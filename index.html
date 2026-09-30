@@ -25,6 +25,9 @@ h2{font-size:24px;font-weight:800;letter-spacing:-.01em}
 .who{font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mint);margin:0}
 .step h2{font-size:26px;font-weight:800;line-height:1.1}
 .step p{margin:0;color:#c9d6cf}
+.pick{display:flex;flex-direction:column;gap:10px;padding-top:14px;border-top:1px solid rgba(255,255,255,.12)}
+.pick h3{font-size:20px;font-weight:800}
+.pick p{font-size:15px}
 .step .fine{font-size:14px;color:var(--muted)}
 .big{display:block;text-align:center;background:var(--mint);color:#052a1a;font:800 19px var(--display);text-decoration:none;border-radius:16px;padding:16px 18px}
 .big:active{transform:scale(.99)}
@@ -53,7 +56,7 @@ footer{color:var(--muted);font-size:14px;text-align:center}
 </style>
 <canvas id="sky" aria-hidden="true"></canvas>
 <main>
-<div class="fin"><img src="img/fin.png" alt="" width="40" height="40"><div><b>Thank you for testing fin 💚</b> Please stay opted in until Google's 14 days are up.</div></div>
+<div class="fin"><img src="img/fin.png" alt="" width="40" height="40"><div><b>Thank you for testing fin 💚</b> Day 7 of 14, so please stay opted in.<div class="bar"><i style="width:50%"></i></div></div></div>
 
 <section class="ask">
 <h1>Help me launch two more apps.</h1>
@@ -63,20 +66,36 @@ footer{color:var(--muted);font-size:14px;text-align:center}
 <section class="step android">
 <p class="who">Android phone</p>
 <h2>Opt in to Windowseat and Conversa</h2>
-<p>Google needs 12 testers opted in to each app for 14 days before it can launch. <b>No watch needed, and nothing to install.</b> Opting in with your Google account is all that counts.</p>
+<p>Google needs 12 testers opted in to each app for 14 days before it can launch.</p>
+<div class="pick">
+<h3>Windowseat</h3>
+<p>A flight tracker for your watch that keeps counting down to landing, even in airplane mode. For Wear OS 3 or newer watches, such as Pixel Watch, Galaxy Watch 4 and later, and OnePlus Watch 2.</p>
 <a class="big" href="https://play.google.com/apps/testing/dev.isuru.windowseat">Opt in to Windowseat</a>
+</div>
+<div class="pick">
+<h3>Conversa</h3>
+<p>A converter for currencies, units and quick maths, plus word definitions. Type it the way you'd say it. For any Android phone.</p>
 <a class="big" href="https://play.google.com/apps/testing/com.isuruhg.conversa">Opt in to Conversa</a>
-<p class="fine">On each page that opens, tap <b>Become a tester</b>. That's it. Please don't leave either test for 14 days. Conversa works on any Android phone, so you can also install it from the link on that page.</p>
+</div>
+<p class="fine">On each page that opens, tap <b>Become a tester</b>, then please stay in the test for 14 days.</p>
 </section>
 
 <section class="step ios">
 <p class="who">iPhone</p>
 <h2>Try Conversa</h2>
+<p>A converter for currencies, units and quick maths, plus word definitions. Type it the way you'd say it.</p>
 <ol class="nums">
 <li><span>Install TestFlight</span><a class="small" href="https://apps.apple.com/app/testflight/id899247664">Get TestFlight</a></li>
 <li><span>Join Conversa</span><a class="small" href="https://testflight.apple.com/join/8qzbFvKz">Join Conversa</a></li>
 </ol>
-<div class="also">Got an Apple Watch? Windowseat is on TestFlight too.<a class="small" href="https://testflight.apple.com/join/tGBTJBfR">Join Windowseat</a></div>
+</section>
+
+<section class="step ios">
+<p class="who">Apple Watch</p>
+<h2>Windowseat is on the App Store</h2>
+<p>A flight tracker for your watch that keeps counting down to landing, even in airplane mode. For Apple Watch Series 4 or later, SE and Ultra, on watchOS 10 or newer.</p>
+<a class="big" href="https://apps.apple.com/app/id6811771498">Get Windowseat</a>
+<div class="also">Prefer the free beta? It's on TestFlight.<a class="small" href="https://testflight.apple.com/join/tGBTJBfR">Join the beta</a></div>
 </section>
 
 <details>
